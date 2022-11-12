@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import img1 from '../components/imgs/avataaars.svg'
 
 
 function Login(props) {

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Login from '../components/Login'
 import { useEffect, useState } from 'react'
 import Web3 from 'web3'
