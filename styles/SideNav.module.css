@@ -1,0 +1,10 @@
+.nav{
+    color: #ffffff;
+    top: 1.2%;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: -3000px;
+    transition: left 0.4s linear;
+}

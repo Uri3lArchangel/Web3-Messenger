@@ -1,3 +1,130 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: rifles;
+    src: url(../components/fonts/Rifles.ttf);
+}
+@keyframes intro {
+    0%{
+        transform: translateX(-6000px);
+    }25%{
+
+    }50%{
+
+    }
+    75%{
+
+    }100%{
+        transform: translateX(0);
+
+    }
+}
+
+.body-container{
+    background-image: url(../components/imgs/img3.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:300% 100%;
+    filter: brightness(1.4);
+    
+}
+.connect-btn{
+font-family: rifles;
+font-size: small;
+border: 1px solid transparent;
+animation-name: intro;
+animation-duration: 1.4s; 
+animation-iteration-count: 1;
+animation-delay: 0.6s;
+transform: translateX(-6000px);
+animation-fill-mode: forwards;
+
+    
+
+}
+.connect-btn:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transition-duration: 0.4s;
+}
+.content-container{
+    z-index: 2;
+    position: absolute;
+}
+.app-name{
+    font-family: rifles;
+    font-size: medium;
+    color: cyan;
+    text-shadow: 1px 1px 0px white ;
+    letter-spacing: 1px;
+    animation-name: intro;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    animation-delay: 0.2s;
+    transform: translateX(-6000px);
+    animation-fill-mode: forwards;
+}
+.motto{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 0.7rem;
+    animation-name: intro;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
+    transform: translateX(-6000px);
+    animation-fill-mode: forwards;
+
+
+}
+.main{
+background-image: url(../components//imgs/backdrop2.gif) ;
+background-position: center;
+background-repeat: no-repeat;
+background-size:170% 100%;
+filter: brightness(0.8);
+z-index: 1;
+}
+
+@media screen and (min-width:182px) {
+    .connect-btn{
+        font-size: large;
+        }
+        .app-name{
+            font-size: xx-large;
+        }
+        .motto{
+            font-size: 1rem;
+        }
+}
+@media screen and (min-width:600px) {
+    .connect-btn{
+        font-size: xx-large;
+        }
+        .app-name{
+            font-size: 3rem;
+        }
+        .motto{
+            font-size: 1.4rem;
+        }
+    .body-container{
+        background-size: 200% 100%;
+    }
+    .content-container{
+        width: 80%;
+        left: 10%;
+        border: 1px solid white;
+        border-radius: 15px
+    }
+}
+@media screen and (min-width:1024px) {
+    .body-container{
+        background-size: 100% 100%;
+    }
+    .content-container{
+        width: 50%;
+        left: 25%;
+    }
+    
+}
