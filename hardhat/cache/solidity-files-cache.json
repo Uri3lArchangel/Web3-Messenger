@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/white-rose/Desktop/web3.0/projects/messenger/hardhat/contracts/Messenger.sol": {
+      "lastModificationDate": 1668360049293,
+      "contentHash": "9fd6673e504368cda2af8406368cfcd3",
+      "sourceName": "contracts/Messenger.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.17"
+      ],
+      "artifacts": [
+        "Messenger"
+      ]
+    }
+  }
+}

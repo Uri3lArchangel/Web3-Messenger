@@ -78,6 +78,9 @@ animation-fill-mode: forwards;
 
 
 }
+.toggleArrow{
+    z-index: 2;
+}
 .main{
 background-image: url(../components//imgs/backdrop2.gif) ;
 background-position: center;
@@ -86,6 +89,18 @@ background-size:170% 100%;
 filter: brightness(0.8);
 z-index: 1;
 }
+.nav{
+    color: #ffffff;
+    top: 1.2%;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: -3000px;
+    transition: left 0.4s linear;
+    z-index: 2;
+}
+
 
 @media screen and (min-width:182px) {
     .connect-btn{
@@ -98,6 +113,7 @@ z-index: 1;
             font-size: 1rem;
         }
 }
+
 @media screen and (min-width:600px) {
     .connect-btn{
         font-size: xx-large;
@@ -110,6 +126,9 @@ z-index: 1;
         }
     .body-container{
         background-size: 200% 100%;
+    }.main{
+        background-size: 200% 100%;
+
     }
     .content-container{
         width: 80%;
@@ -117,6 +136,23 @@ z-index: 1;
         border: 1px solid white;
         border-radius: 15px
     }
+}
+@media screen and (min-width:786px) {
+    .toggleArrow{
+        visibility: hidden;
+    }.nav{
+        left: 0;
+        position: absolute;
+        width: 25%;
+        top: 0;
+    }
+  .cancelBtn{
+    visibility: hidden;
+  }.main{
+    right: 0;
+    width: 75%;
+  }
+ 
 }
 @media screen and (min-width:1024px) {
     .body-container{

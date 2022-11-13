@@ -1,0 +1,43 @@
+{
+    "address": "0xc0EFF2f9f664B0fCB48CE08001beaa98a33D0817",
+    "abi": [
+        {
+            "type": "function",
+            "name": "Users",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "uint256"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "address"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "addUsers",
+            "constant": false,
+            "payable": false,
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "inputs": [],
+      "name": "getUsers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+    ]
+}
