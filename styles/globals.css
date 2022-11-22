@@ -79,19 +79,37 @@ animation-fill-mode: forwards;
 
 }
 .toggleArrow{
-    z-index: 2;
+    z-index: 10;
 }
 .main{
-background-image: url(../components//imgs/backdrop2.gif) ;
+background-image: url(../components/imgs/backdrop1.gif) ;
 background-position: center;
 background-repeat: no-repeat;
 background-size:170% 100%;
-filter: brightness(0.8);
+filter: brightness(0.7);
 z-index: 1;
+height: 90%;
+}
+.main2{
+background-image: url(../components/imgs/backdrop1.gif) ;
+background-position: center;
+background-repeat: no-repeat;
+background-size:170% 100%;
+filter: blur(15px) brightness(1.4);
+z-index: 1;
+height: 100%;
+}
+.inner-main2{
+    top: 20%;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+
 }
 .nav{
     color: #ffffff;
-    top: 1.2%;
+    top: 0;
+    padding-top: 10px;
     background-color: black;
     height: 100%;
     position: absolute;
@@ -100,8 +118,84 @@ z-index: 1;
     transition: left 0.4s linear;
     z-index: 2;
 }
+.profile_card{
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-left-radius: 990px;
+    border-bottom-right-radius: 990px;
+    width: 120px;
+
+}
+.profile_card p{
+    width:100%;
+    
+    text-align: center;
+    line-break:anywhere;
+}
+.connect_Main ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.connect_Main{
+    width: 100%;
+    background-image: url('../components//imgs//backdrop3.gif');
+    background-size:170% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.7);
+    height: 100%;
+    overflow: scroll;
+
+}
+.loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-image: url('../components/imgs/loading.gif');
+}.profile_Main{
+   
+    background-color: #0c0a1c;
+    background-image: url('../components/imgs/backdrop4.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    filter: brightness(0.9);
+    z-index: 0;
+    top: 0;
 
 
+}
+.profile_Container{
+    border-radius: 40px;
+    z-index: 2;
+    left: 15%;
+}
+.editProfile_form{
+    width: 100%;
+    top: 15%;
+    border-radius: 20px;
+
+}
+.editProfile_form input,.editProfile_form textarea{
+    width: 70%;
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+    outline: 0;
+
+}
+.chat_input{
+    width: 75%;
+    height: 10%;
+    border-radius: 12px;
+}.chatinput_div{
+    z-index: 3;
+}
 @media screen and (min-width:182px) {
     .connect-btn{
         font-size: large;
@@ -111,6 +205,9 @@ z-index: 1;
         }
         .motto{
             font-size: 1rem;
+        }
+        .profile_card{
+            width:200px;
         }
 }
 
@@ -126,8 +223,8 @@ z-index: 1;
         }
     .body-container{
         background-size: 200% 100%;
-    }.main{
-        background-size: 200% 100%;
+    }.main,.main2,.connect_Main{
+        background-size: 100% 100%;
 
     }
     .content-container{
@@ -135,6 +232,9 @@ z-index: 1;
         left: 10%;
         border: 1px solid white;
         border-radius: 15px
+    }
+    .profile_card{
+        width:250px;
     }
 }
 @media screen and (min-width:786px) {
@@ -145,22 +245,48 @@ z-index: 1;
         position: absolute;
         width: 25%;
         top: 0;
+        bottom: 0;
+        height: 100%;
+    }.chatinput_div{
+        width: 75%;
+        right: 0;
+    }
+    .editProfile_form{
+        width: 50%;
+        left: 40%;
     }
   .cancelBtn{
     visibility: hidden;
-  }.main{
+  }.main,.main2,.connect_Main,.profile_Main{
     right: 0;
     width: 75%;
   }
- 
+  .inner-main2{
+    width: 75%;
+    left: 25%;
+  }
 }
 @media screen and (min-width:1024px) {
     .body-container{
         background-size: 100% 100%;
+        background-position: center;
     }
-    .content-container{
-        width: 50%;
+    .content-container,.connect_Main{
+        width: 75%;
         left: 25%;
     }
+    .connect_Main ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 98%;
+    }
     
+    .connect_Main{
+        /* height: 100%; */
+    }
+    .inner-main2{
+        width: 50%;
+        left: 40%;
+    }
 }

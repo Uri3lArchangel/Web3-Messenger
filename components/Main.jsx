@@ -1,15 +1,28 @@
 import React from 'react'
+import Layout from './layout'
 import SideNav from './SideNav'
+import { fetchUsers } from '../components/Backend/Web3INit'
+import Join from '../components/Join'
 
-function Main() {
+function Main(props) {
+  let isUserAdded = false
+if(isUserAdded){
   return (
     <>
-    <div className='main  absolute bg-black h-full w-full '>
-    
-    </div>
+  <Layout state={props.state} val={props.val} change={props.change} save={props.save} />
+  <SideNav />
+    </>
+  )
+
+}
+else{
+  return (
+    <>
+  <Join />
   <SideNav />
     </>
   )
 }
-
+}
 export default Main
+
