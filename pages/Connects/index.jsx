@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Connects from '../../components/connects/Connects'
 import { fetchUsers } from '../../components/Backend/Web3INit'
-import { useState } from 'react'
 
 function index(props) {
  

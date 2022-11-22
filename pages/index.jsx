@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import Login from '../components/Login'
-import { createContext, useContext, useEffect, useReducer, useState } from 'react'
+import {  useEffect, useReducer, useState } from 'react'
 import  Main  from '../components/Main'
 import AbiJson from '../hardhat/artifacts/abi/Messenger.json'
 import Gun from 'gun'
 import Web3 from 'web3'
 import {addUser} from '../components/web3'
-import { EXPORT_MARKER } from 'next/dist/shared/lib/constants'
-import PageLoader from 'next/dist/client/page-loader'
 // import {init} from '../components/web3'
 
 const gun = Gun({

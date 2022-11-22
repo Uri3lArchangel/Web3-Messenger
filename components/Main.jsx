@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from './layout'
 import SideNav from './SideNav'
-import { fetchUsers } from '../components/Backend/Web3INit'
 import Join from '../components/Join'
 
 function Main(props) {

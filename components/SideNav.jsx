@@ -1,6 +1,4 @@
-import React, { useContext } from 'react'
-import cl from '../styles/SideNav.module.css'
-import { Context } from '../pages'
+import React from 'react'
 import { ArrowRightIcon,ChatBubbleLeftIcon,UserGroupIcon,XCircleIcon,UserCircleIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 
